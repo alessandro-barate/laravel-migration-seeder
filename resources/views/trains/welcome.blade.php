@@ -2,5 +2,6 @@
 
 
 @section('main')
-    <h1>Home Page</h1>
+    <h1>Train Page</h1>
+    <p>Pagina dei treni</p>
 @endsection

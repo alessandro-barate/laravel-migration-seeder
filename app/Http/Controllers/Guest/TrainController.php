@@ -9,6 +9,6 @@ class TrainController extends Controller
 {
     public function index()
     {
-        return 'Pagina dei treni';
+        return view('trains.welcome');
     }
 }
