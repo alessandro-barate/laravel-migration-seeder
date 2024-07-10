@@ -11,7 +11,6 @@
 
 <body>
     <h1>Laravel Template</h1>
-    ere
 
     {{-- Example tag for images --}}
     {{-- <img src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> --}}
