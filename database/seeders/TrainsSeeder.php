@@ -25,8 +25,9 @@ class TrainsSeeder extends Seeder
             $train->company = $faker->company();
             $train->departure_station = $faker->city();
             $train->arrival_station = $faker->city();
+            $train->departure_day = $faker '2024-08-23 12:52:28';
             $train->departure_time = $faker '2024-08-23 12:52:28';
-            $train->departure_time = $faker '2024-08-23 12:52:28';
+            $train->arrival_day = $faker '2024-08-23 15:14:48';
             $train->arrival_time = $faker '2024-08-23 15:14:48';
             $train->train_code = $faker 'AAA35346';
             $train->cars_number = $faker '9';
