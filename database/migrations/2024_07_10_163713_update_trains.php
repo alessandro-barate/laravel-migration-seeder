@@ -15,12 +15,12 @@ return new class extends Migration
             $table->string('company', 70);
             $table->string('departure_station', 70);
             $table->string('arrival_station', 70);
-            $table->string('departure_hour', 70);
-            $table->string('arrival_hour', 70);
+            $table->dateTime('departure_time', 70);
+            $table->dateTime('arrival_time', 70);
             $table->string('train_code', 70);
-            $table->tinyInteger('cars_number', 2);
-            $table->string('is_in_time', 70);
-            $table->string('is_canceled', 70);
+            $table->tinyInteger('cars_number')->default(2);
+            $table->boolean('is_in_time')->default(true);
+            $table->boolean('is_canceled')->default(false);
         });
     }
 
