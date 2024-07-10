@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Guest\PageController;
+use App\Http\Controllers\Guest\TrainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +19,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', [PageController::class, 'index']);
+// Homepage
+Route::get('/', [PageController::class, 'index'])->name('homepage');
+
+// Pagina treni
+Route::get('/trains', [TrainController::class, 'index'])->name('trains');
