@@ -25,14 +25,12 @@ class TrainsSeeder extends Seeder
             $train->company = $faker->company();
             $train->departure_station = $faker->city();
             $train->arrival_station = $faker->city();
-            $train->departure_day = $faker '2024-08-23 12:52:28';
-            $train->departure_time = $faker '2024-08-23 12:52:28';
-            $train->arrival_day = $faker '2024-08-23 15:14:48';
-            $train->arrival_time = $faker '2024-08-23 15:14:48';
-            $train->train_code = $faker 'AAA35346';
-            $train->cars_number = $faker '9';
-            $train->is_in_time = $faker 1;
-            $train->is_canceled = $faker 0;
+            $train->departure_time = $faker->dateTimeBetween('-1 week', '+1 week');
+            $train->arrival_time = $faker->dateTimeBetween('-1 week', '+1 week');
+            $train->train_code = $faker->bothify('??###?#?');
+            $train->cars_number = $faker->numberBetween(2, 20);
+            $train->is_in_time = $faker->boolean();
+            $train->is_canceled = $faker->boolean();
 
             // Salvo il record
             $train->save();
