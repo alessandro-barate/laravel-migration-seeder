@@ -10,8 +10,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">{{ $train->train_code }}</h4>
-                        <p class="card-text"><span>Partenza da:</span> {{ $train->departure_station }}</p>
-                        <p class="card-text"><span>Arrivo a:</span> {{ $train->arrival_station }}</p>
+                        <p class="card-text"><span>Partenza da:</span> {{ Ucwords($train->departure_station) }}</p>
+                        <p class="card-text"><span>Arrivo a:</span> {{ Ucwords($train->arrival_station) }}</p>
                         <hr>
                         <p class="card-text"><span>Partenza il:</span> {{ $train->departure_time }}</p>
                         <p class="card-text"><span>Arrivo il:</span> {{ $train->arrival_time }}</p>
