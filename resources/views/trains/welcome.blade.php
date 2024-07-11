@@ -6,7 +6,7 @@
     <div class="row">
 
         @foreach ($trains as $train)
-            <div class="col-3">
+            <div class="col-3 py-4">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">{{ $train->train_code }}</h4>
